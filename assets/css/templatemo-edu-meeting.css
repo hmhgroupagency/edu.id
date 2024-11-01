@@ -1320,7 +1320,7 @@ section.our-facts .video::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Hitam dengan transparansi */
+  background-color: rgba(0, 0, 0, 0.5); /* Hitam dengan transparansi */
   border-radius: 20px; /* Menyesuaikan dengan elemen utama */
   z-index: 1; /* Pastikan overlay berada di atas gambar */
 }
