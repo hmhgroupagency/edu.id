@@ -22,41 +22,8 @@
   <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
-<!--
-
-TemplateMo 569 Edu Meeting
-
-https://templatemo.com/tm-569-edu-meeting
-
--->
 
 <style>
-  .chat-bubble {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-
-  .chat-icon {
-    display: inline-block;
-    background-color: #a12c2f; /* Warna latar belakang */
-    color: white; /* Warna teks */
-    border-radius: 50%; /* Bentuk bulat */
-    width: 50px; /* Lebar tombol */
-    height: 50px; /* Tinggi tombol */
-    text-align: center; /* Pusatkan teks */
-    line-height: 50px; /* Pusatkan teks secara vertikal */
-    font-size: 24px; /* Ukuran font */
-    text-decoration: none; /* Hapus garis bawah */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
-    transition: background-color 0.3s; /* Efek transisi */
-  }
-
-  .chat-icon:hover {
-    background-color: #a12c2f; /* Warna saat hover */
-  }
-
   .divider {
     width: 100%;
     height: 2px;
@@ -130,10 +97,6 @@ https://templatemo.com/tm-569-edu-meeting
   <!-- ***** Header Area End ***** -->
 
   <!-- ***** Main Banner Area Start ***** -->
-  <div class="chat-bubble">
-    <a href="#chat" class="chat-icon">💬</a>
-  </div>
-
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video">
       <source src="assets/images/course-video.mp4" type="video/mp4" />
@@ -558,6 +521,25 @@ https://templatemo.com/tm-569-edu-meeting
       $(window).scroll(function () {
         checkSection();
       });
+
+        (function(d, t) {
+    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    v.onload = function() {
+      if (!document.getElementById('root')) {
+        var root = d.createElement('div');
+        root.id = 'root';
+        d.body.appendChild(root);
+      }
+      if (window.myChatWidget && typeof window.myChatWidget.load === 'function') {
+        window.myChatWidget.load({
+          id: '0b367b6e-95be-4a7f-8f9d-e2b13ad09e2c',
+        });
+      }
+    };
+    v.src = "https://agentivehub.com/production.bundle.min.js";
+    v.type = "text/javascript";
+    s.parentNode.insertBefore(v, s);
+  })(document, 'script');
     </script>
   </body>
 
