@@ -1303,19 +1303,35 @@ section.our-facts h2 {
 }
 
 section.our-facts .video {
+  position: relative;
   text-align: center;
   margin-left: 70px;
-  background-image: url(../images/video-item-bg.jpg);
+  background-image: url(https://img.freepik.com/premium-photo/robot-touching-computer-with-its-hand-generative-ai_888418-13227.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   border-radius: 20px;
 }
 
+section.our-facts .video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Hitam dengan transparansi */
+  border-radius: 20px; /* Menyesuaikan dengan elemen utama */
+  z-index: 1; /* Pastikan overlay berada di atas gambar */
+}
+
 section.our-facts .video img {
   padding: 170px 0px;
   max-width: 56px;
+  position: relative;
+  z-index: 2; /* Konten berada di atas overlay */
 }
+
 
 
 /* 
