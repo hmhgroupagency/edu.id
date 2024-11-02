@@ -43,16 +43,13 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-sm-8">
-          <div class="left-content">
-            <p>Created by <em>Andrew Susanto</em> (Owner Pusat Gadai Indonesia)</p>
-          </div>
         </div>
         <div class="col-lg-4 col-sm-4">
           <div class="right-icons">
             <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google"></i></a></li>
               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
@@ -74,7 +71,7 @@
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li><a href="#">Consultation</a></li>
+              <li><a href="#consultation">Consultation</a></li>
               <li class="scroll-to-section"><a href="#">About us</a></li>
               <li class="has-sub">
                 <a href="javascript:void(0)">Pages</a>
@@ -110,7 +107,7 @@
               <h2>AI SCAM DETECOR</h2>
               <p>Di sini, kami menyediakan alat untuk membantu Anda mengenali dan menghindari penipuan online. Dengan sistem <a rel="nofollow" href="#" target="_blank">ChatBot</a> kami, Anda dapat memeriksa apakah tautan yang Anda temui adalah <i>scam </i> atau tidak.</p>
               <div class="main-button-red">
-                <div class="scroll-to-section"><a href="#">Gabung Sekarang</a></div>
+                <div class="scroll-to-section"><a href="#">Gabung Forum</a></div>
               </div>
             </div>
           </div>
@@ -289,7 +286,9 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="item">
+                <div id="consultation">
                 <h3>Ingin melakukan konsultasi lebih lanjut?</h3>
+                </div>
                 <div class="main-button-red">
                   <div class="scroll-to-section"><a href="#"><b>Roy Shakti </b></a></div>
                 </div>
@@ -522,6 +521,7 @@
         checkSection();
       });
 
+//ai script start
         (function(d, t) {
     var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
     v.onload = function() {
@@ -540,6 +540,22 @@
     v.type = "text/javascript";
     s.parentNode.insertBefore(v, s);
   })(document, 'script');
+  // ai script end
+
+  //gulir smooth start
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth' // Menambahkan efek gulir halus
+        });
+      }
+    });
+  });
+  //gulir smooth end
     </script>
   </body>
 
